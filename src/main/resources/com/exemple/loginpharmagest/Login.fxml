@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Text?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="459.0" prefWidth="650.0" style="-fx-background-color: #e9ecef; -fx-background-radius: 20;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.exemple.loginpharmagest.LoginController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <left>
+        <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="425.0" prefWidth="232.0" style="-fx-background-color: #40c057; -fx-border-radius: 20; -fx-border-width: 1; -fx-border-style: solid; -fx-background-radius: 20; -fx-border-color: #ffffff;" BorderPane.alignment="CENTER">
+            <children>
+                <AnchorPane layoutX="20.0" layoutY="14.0" prefHeight="42.0" prefWidth="190.0" style="-fx-background-color: #ffffff; -fx-background-radius: 15;">
+                    <children>
+                        <Text fill="#40c057" layoutX="28.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 25;" text="PharmaGest" />
+                    </children>
+                </AnchorPane>
+                <Text fill="WHITE" layoutX="25.0" layoutY="329.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 18;" text="La paharma populaire" />
+                <Circle fill="WHITE" layoutX="115.0" layoutY="169.0" radius="85.0" stroke="WHITE" strokeType="INSIDE" />
+                <AnchorPane layoutX="102.0" layoutY="117.0" prefHeight="104.0" prefWidth="25.0" style="-fx-background-color: #40c057; -fx-background-radius: 8;" />
+                <AnchorPane layoutX="103.0" layoutY="114.0" prefHeight="110.0" prefWidth="24.0" rotate="90.6" style="-fx-background-color: #40c057; -fx-background-radius: 8;" />
+            </children>
+        </AnchorPane>
+    </left>
+    <center>
+        <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="422.0" prefWidth="374.0" style="-fx-border-radius: 10%;" BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets bottom="60.0" left="60.0" right="60.0" top="60.0" />
+            </BorderPane.margin>
+            <children>
+                <AnchorPane layoutX="22.0" layoutY="-4.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="330.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;">
+                    <children>
+                        <Text fill="#40c057" layoutX="147.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: Bold; -fx-font-size: 16;" text="LOGIN" />
+                    </children>
+                </AnchorPane>
+                <Label layoutX="22.0" layoutY="128.0" style="-fx-font-size: 15;" text="Identifiant" />
+                <TextField fx:id="usernameTextField" layoutX="172.0" layoutY="121.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="180.0" promptText="Identifiant" onKeyReleased="#onTextChanged" />
+                <Label layoutX="22.0" layoutY="177.0" minHeight="-Infinity" minWidth="-Infinity" style="-fx-font-size: 15;" text="Mot de passe" />
+                <PasswordField fx:id="passwordField" layoutX="172.0" layoutY="170.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="179.0" promptText="Mot de passe" onKeyReleased="#onTextChanged" />
+                <Button fx:id="loginButton" layoutX="22.0" layoutY="252.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="38.0" prefWidth="132.0" style="-fx-background-color: #40c057; -fx-font-size: 16; -fx-font-weight: Bold;" text="login" textFill="WHITE" />
+                <Button fx:id="cancelButton" layoutX="208.0" layoutY="252.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="37.0" prefWidth="142.0" style="-fx-font-weight: Bold; -fx-background-color: red;" text="Cancel" textFill="WHITE" />
+              <AnchorPane layoutX="14.0" layoutY="361.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="340.0" style="-fx-background-color: #ffffff; -fx-border-image-width: 1; -fx-border-style: solid; -fx-border-radius: 15; -fx-background-radius: 15; -fx-border-color: #ffffff;">
+                  <children>
+                      <Text fill="#40c057" layoutX="14.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15;" text="\@copy: Tous droits reservés : Pharmagest 2024" wrappingWidth="332.0001220703125" />
+                  </children>
+              </AnchorPane>
+            <Label layoutX="22.0" layoutY="51.0" prefHeight="36.0" prefWidth="328.0" />
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>
